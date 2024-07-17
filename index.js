@@ -1,7 +1,9 @@
+document.addEventListener('DOMContentLoaded', function(){ 
 const inputField=document.getElementById('search')
 const searchBtn=document.getElementById('submit')
 const results=document.getElementById('search-results')
 const container=document.getElementById('meals-container')
+const randombtn=document.getElementById('random-btn')
 
 searchBtn.addEventListener('submit', findMeals)
 
@@ -49,3 +51,26 @@ function generateIngredientsList(meal) {
     }
     return ingredientsList;
 }
+randombtn.addEventListener('click', getRandomMeals)
+
+function getRandomMeals(){
+fetch('https://themealdb.com/api/json/v1/1/random.php')
+.then(res=>res.json())
+.then((data)=>{
+console.log(data)
+const meal=data.meals[0]
+results.innerHTML='Random meals'
+container.innerHTML=`<div><img src="${meal.strMealThumb}">
+       
+        <h3>${meal.strMeal}</h3>
+        <h3>${meal.strCategory}</h3>
+        <h2 id="area">${meal.strArea}</h2>
+        <ul>
+        <h2>Ingredients</h2>
+           ${generateIngredientsList(meal)}
+        </ul>
+        <p id="instruction">${meal.strInstructions}</p>
+        <a id="link" href="">${meal.strSource}</a></div>`
+})
+}
+})
