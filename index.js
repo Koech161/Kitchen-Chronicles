@@ -32,6 +32,7 @@ function findMeals(e){
         <h2>Ingredients</h2>
            ${generateIngredientsList(meal)}
         </ul>
+        <h2>Instructions</h2>
         <p id="instruction">${meal.strInstructions}</p>
         <a id="link" href="">${meal.strSource}</a></div>`)
  }).catch((error)=>{
@@ -69,6 +70,7 @@ container.innerHTML=`<div><img src="${meal.strMealThumb}">
         <h2>Ingredients</h2>
            ${generateIngredientsList(meal)}
         </ul>
+        <h2>Instructions</h2>
         <p id="instruction">${meal.strInstructions}</p>
         <a id="link" href="">${meal.strSource}</a></div>`
 })
