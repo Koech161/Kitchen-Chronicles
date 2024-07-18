@@ -59,7 +59,7 @@ fetch('https://themealdb.com/api/json/v1/1/random.php')
 .then((data)=>{
 console.log(data)
 const meal=data.meals[0]
-results.innerHTML='Random meals'
+results.innerHTML='Random meal'
 container.innerHTML=`<div><img src="${meal.strMealThumb}">
        
         <h3>${meal.strMeal}</h3>
