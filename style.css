@@ -1,11 +1,11 @@
 body{
-    background: #d3c4c4;
+    background: #96a89c;
     margin: 0;
     padding: 0;
 }
 .container{
     min-height: 500px;
-    background: #ddd8d8;
+    background: #0c0c0c;
     width: 100%;
 }
 .container h1{
@@ -39,10 +39,14 @@ body{
 }
 #random-btn{
     font-size: 16px;
-    color: #dd1717;
+    color: #fa0909;
     border: none;
     border-radius: 10px;
     cursor: pointer;
+}
+#random-btn:hover{
+background-color: #fa0909;
+color: #f3eeee;
 }
 .results{
     display: flex;
@@ -50,8 +54,8 @@ body{
 }
 .meals img{
     margin: 10px auto;
-   height: 600px; 
-   width: 600px;
+   height: 430px; 
+   width: 430px;
    display: grid;
    grid-template-rows: repeat(4 1fr);
    padding: 5px;
@@ -67,12 +71,13 @@ body{
 
 }
 .meals p{
-    width:70%;
+   max-width:auto;
     display: flex;
     justify-content:center ;
     height: auto;
     font-size: 25px;
-    padding-left: 300px;
+    padding-left: 50px;
+    color: #f5f1f1;
 }
 ul li{
     list-style: none;
@@ -80,7 +85,7 @@ ul li{
     justify-content: center;
     font: optional;
     font-size: 20px;
-    color: #000;
+    color: #fff9f9;
 }
 #area{
     justify-content: center;
@@ -89,9 +94,17 @@ ul li{
 h2{
     display: flex;
     justify-content: center;
+    color: #400ff3;
 }
 #link{
     display: flex;
     justify-content: center;
     font-size: 25px;
+    color: #dd1717;
+}
+.meals{
+    flex-wrap: wrap;
+    max-width: 80%;
+    padding-left: 10%;
+    color: #f3efef;
 }
