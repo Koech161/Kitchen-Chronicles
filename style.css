@@ -2,17 +2,24 @@ body{
     background: #96a89c;
     margin: 0;
     padding: 0;
+    background:url(https://images.pexels.com/photos/4551832/pexels-photo-4551832.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 .container{
-    min-height: 500px;
-    background: #0c0c0c;
-    width: 100%;
+    background: #96a89c;
+    width:auto;
+    margin-left: auto;
+
+    
 }
 .container h1{
     justify-content: center;
     display: flex;
     font-size: 35px;
-    background-color: #0a0a0a;
+    background:#ebe1e1;
     color: #f03607;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
@@ -75,7 +82,7 @@ color: #f3eeee;
     justify-content: center;
     font-size: 25px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:#ff06d5;
+    color:#1f1d1d;
 
 
 }
@@ -86,7 +93,7 @@ color: #f3eeee;
     height: auto;
     font-size: 1.3em;
     padding-left: 10%;
-    color: #f5f1f1;
+    color: #0f0f0f;
     padding-right: 6%;
 }
 ul li{
@@ -95,7 +102,7 @@ ul li{
     justify-content: center;
     font: optional;
     font-size: 1.5em;
-    color: #fff9f9;
+    color: #0e0d0d;
 }
 #area{
     justify-content: center;
