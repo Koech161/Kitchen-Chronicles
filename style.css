@@ -12,12 +12,15 @@ body{
     justify-content: center;
     display: flex;
     font-size: 35px;
-    background-color: #f3efef;
+    background-color: #0a0a0a;
+    color: #f03607;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 .form{
     display: flex;
     justify-content: center;
+    padding-left: 100px;
 }
 #search{
     font-size: 20px;
@@ -32,6 +35,10 @@ body{
     background-color: #faf2f2;
     cursor: pointer;
     height: 25px;
+}
+#search-btn:hover{
+    color: #fffdfd;
+    background: #f03607;
 }
 .random{
     display: flex;
@@ -78,8 +85,9 @@ color: #f3eeee;
     justify-content:center ;
     height: auto;
     font-size: 1.3em;
-    padding-left: 50px;
+    padding-left: 10%;
     color: #f5f1f1;
+    padding-right: 6%;
 }
 ul li{
     list-style: none;
