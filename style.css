@@ -60,7 +60,8 @@ color: #f3eeee;
    grid-template-rows: repeat(4 1fr);
    padding: 5px;
    border-radius: 35%;
-   float: flex;
+   padding-right: 15px;
+
 }
 .meals h3{
     display: flex;
