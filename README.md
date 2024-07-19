@@ -2,7 +2,7 @@
     
            Description
 
-    Kitchen Chromicles is an interactive program aimed at helping userd discover  and prepare deliciuos meals .users can easily search for recipes by meal name to acces comprehensive details about ingridient ,cooking instruction,oridin and image of dish.
+    Kitchen Chronicles is an interactive program aimed at helping users discover  and prepare deliciuos meals .users can easily search for recipes by meal name to acces comprehensive details about ingridient ,cooking instruction,oridin and image of dish.
 
          Core features
 
