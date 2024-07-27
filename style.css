@@ -1,15 +1,15 @@
 body{
-    background: #96a89c;
+    background: #f5f8f6;
     margin: 0;
     padding: 0;
-    background:url(https://images.pexels.com/photos/4551832/pexels-photo-4551832.jpeg?auto=compress&cs=tinysrgb&w=600);
+    /* background:url(https://images.pexels.com/photos/4551832/pexels-photo-4551832.jpeg?auto=compress&cs=tinysrgb&w=600);
     background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 
 }
 .container{
-    background: #96a89c;
+    background: #f1f5f2;
     width:auto;
     margin-left: auto;
 
@@ -18,8 +18,8 @@ body{
 .container h1{
     justify-content: center;
     display: flex;
-    font-size: 35px;
-    background:#ebe1e1;
+    font-size: 2vw;
+    background:#f7f4f4;
     color: #f03607;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
@@ -30,7 +30,7 @@ body{
     padding-left: 70px;
 }
 #search{
-    font-size: 20px;
+    font-size: 1.8vw;
     border: none;
     border-radius: 10px;
     color: #000;
@@ -50,9 +50,10 @@ body{
 .random{
     display: flex;
     justify-content: center;
+    
 }
 #random-btn{
-    font-size: 16px;
+    font-size: 1.3vw;
     color: #fa0909;
     border: none;
     border-radius: 10px;
@@ -80,7 +81,7 @@ color: #f3eeee;
 .meals h3{
     display: flex;
     justify-content: center;
-    font-size: 25px;
+    font-size: 1.8vw;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:#1f1d1d;
 
@@ -91,7 +92,7 @@ color: #f3eeee;
     display: flex;
     justify-content:center ;
     height: auto;
-    font-size: 1.3em;
+    font-size:2vw;
     padding-left: 10%;
     color: #0f0f0f;
     padding-right: 6%;
@@ -101,7 +102,7 @@ ul li{
     display: flex;
     justify-content: center;
     font: optional;
-    font-size: 1.5em;
+    font-size: 1.9vw;
     color: #0e0d0d;
 }
 #area{
@@ -112,11 +113,13 @@ h2{
     display: flex;
     justify-content: center;
     color: #400ff3;
+    font-size: 2vw;
+    text-decoration: underline;
 }
 #link{
     display: flex;
     justify-content: center;
-    font-size: 25px;
+    font-size: 1.9vw;
     color: #dd1717;
 }
 .meals{
@@ -124,4 +127,10 @@ h2{
     max-width: auto;
     padding-left: 10%;
     color: #f3efef;
+}
+.copyright{
+    font-size: 1.2vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
