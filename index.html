@@ -13,8 +13,21 @@
 </head>
 <body>
     <div class="container justify-content-center">
-        <h1 id="brand" class="text-center">Kitchen Chronicles</h1>
-        <div class="form-group">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#" id="brand">Kitchen Chronicles</a>
+                <div class="d-flex align-items-center ms-auto">
+                    <form id="submit" class="d-flex">
+                        <input type="text" id="search" placeholder="Search for meal e.g., pizza" class="form-control me-2" autocomplete="off">
+                        <button id="search-btn" class="btn btn-light" type="submit">Search</button>
+                    </form>
+                    <button class="btn btn-secondary ms-2" id="random-btn">Random</button>
+                </div>
+            </div>
+        </nav>
+        <!-- <nav class="fixed-top navbar navbarNav flex-wrap navbar-light">
+        <h1 id="brand" class="text-center navbar-brand">Kitchen Chronicles</h1>
+        <div class=" navbar-item">
             <form id="submit">
             <input type="text" id="search" placeholder="search for meal eg.pizza" class="form-control" autocomplete="off">
             <button id="search-btn" class="btn btn-primary mt-2" type="submit">search</button>
@@ -23,6 +36,7 @@
         <div class="random">
             <button class="btn btn-secondary" id="random-btn">Random</button>
         </div>
+    </nav> -->
        <div id="search-results" class="results text-center"></div>
        <div class="meals comtainer d-flex flex-wrap" id="meals-container">
       
@@ -31,8 +45,8 @@
         </div>
        
     </div>
-    <div class="copyright">
-        <p class="text-center">&copy; 2024 kitchenChronicles. All rights reserved</p>
+    <div class="copyright fixed-bottom bg-primary py-3">
+        <p class="text-center text-white mb-0 ">&copy; 2024 kitchenChronicles. All rights reserved</p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
