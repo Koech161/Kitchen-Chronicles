@@ -5,3 +5,6 @@
     font-style: normal;
 }
 
+body {
+    padding-bottom: 50px; /* Adjust based on the height of your footer */
+}
