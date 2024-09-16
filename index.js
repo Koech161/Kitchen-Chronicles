@@ -1,3 +1,5 @@
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/js/bootstrap.bundle.min';
 document.addEventListener('DOMContentLoaded', function(){ 
 const inputField=document.getElementById('search')
 const searchBtn=document.getElementById('submit')
@@ -23,19 +25,25 @@ function findMeals(e){
         }else{
             results.innerHTML=`search results for ${item}`
         }
-        container.innerHTML=data.meals.map((meal)=>`<div><img src="${meal.strMealThumb}">
-       
-        <h3>${meal.strMeal}</h3>
-        <h3>${meal.strCategory}</h3>
-        <h2 id="area">${meal.strArea}</h2>
-        <ul>
-        <h2>Ingredients</h2>
-           ${generateIngredientsList(meal)}
-        </ul>
-        <h2>Instructions</h2>
-        <p id="instruction">${meal.strInstructions}</p>
-        <a id="link" href="">${meal.strSource}</a></div>`)
- }).catch((error)=>{
+        container.innerHTML = data.meals.map((meal) => `
+    <div class='card text-center row' style='width: 700px;'>
+        <img class='img-fluid card-img-top' src="${meal.strMealThumb}" alt="${meal.strMeal}">
+        <div class='card-body'>
+            <h3>${meal.strMeal}</h3>
+            <h4>${meal.strCategory}</h4>
+            <h5>${meal.strArea}</h5>
+            <ul class='list-unstyled'>
+                <h2>Ingredients</h2>
+                <li>${generateIngredientsList(meal)}</li>
+            </ul>
+            <div class='card'>
+                <h2>Instructions</h2>
+                <p>${meal.strInstructions}</p>
+            </div>
+            <a href="${meal.strSource}" class="btn btn-primary">Source</a>
+        </div>
+    </div>
+`)}) .catch((error)=>{
     console.error('Error fetching data', error);
  })
  inputField.value=''
@@ -61,18 +69,23 @@ fetch('https://themealdb.com/api/json/v1/1/random.php')
 console.log(data)
 const meal=data.meals[0]
 results.innerHTML='Random meal'
-container.innerHTML=`<div><img src="${meal.strMealThumb}">
-       
-        <h3>${meal.strMeal}</h3>
-        <h3>${meal.strCategory}</h3>
-        <h2 id="area">${meal.strArea}</h2>
-        <ul>
-        <h2>Ingredients</h2>
-           ${generateIngredientsList(meal)}
-        </ul>
-        <h2>Instructions</h2>
-        <p id="instruction">${meal.strInstructions}</p>
-        <a id="link" href="">${meal.strSource}</a></div>`
+container.innerHTML=` <div class='card text-center row' style='width: 700px;'>
+        <img class='img-fluid card-img-top' src="${meal.strMealThumb}" alt="${meal.strMeal}">
+        <div class='card-body'>
+            <h3>${meal.strMeal}</h3>
+            <h4>${meal.strCategory}</h4>
+            <h5>${meal.strArea}</h5>
+            <ul class='list-unstyled'>
+                <h2>Ingredients</h2>
+                <li>${generateIngredientsList(meal)}</li>
+            </ul>
+            <div class='card'>
+                <h2>Instructions</h2>
+                <p>${meal.strInstructions}</p>
+            </div>
+            <a href="${meal.strSource}" class="btn btn-primary">Source</a>
+        </div>
+    </div>`
 })
 }
 })

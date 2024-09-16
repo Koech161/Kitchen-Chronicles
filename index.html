@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe-finder</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+
+    
+
 </head>
 <body>
-    <div class="container">
-        <h1 id="brand">Kitchen Chronicles</h1>
-        <div class="form">
+    <div class="container justify-content-center">
+        <h1 id="brand" class="text-center">Kitchen Chronicles</h1>
+        <div class="form-group">
             <form id="submit">
-            <input type="text" id="search" placeholder="search for meal eg.pizza" autocomplete="off">
-            <button id="search-btn" type="submit">search</button>
+            <input type="text" id="search" placeholder="search for meal eg.pizza" class="form-control" autocomplete="off">
+            <button id="search-btn" class="btn btn-primary mt-2" type="submit">search</button>
         </form>
         </div>
         <div class="random">
-            <button id="random-btn">Random</button>
+            <button class="btn btn-secondary" id="random-btn">Random</button>
         </div>
-       <div id="search-results" class="results"></div>
-       <div class="meals" id="meals-container">
+       <div id="search-results" class="results text-center"></div>
+       <div class="meals comtainer d-flex flex-wrap" id="meals-container">
       
     </div>
       
@@ -27,9 +32,11 @@
        
     </div>
     <div class="copyright">
-        <p >&copy; 2024</p>
+        <p class="text-center">&copy; 2024 kitchenChronicles. All rights reserved</p>
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
     <script src="index.js"></script>
     
 </body>
